@@ -1,0 +1,21 @@
+.h-center
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-left
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.h-right
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

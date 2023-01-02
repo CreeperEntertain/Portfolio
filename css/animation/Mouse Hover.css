@@ -1,0 +1,142 @@
+#mh-size-increase
+{
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 300ms;
+}
+#mh-size-increase:hover
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(1.04);
+}
+
+#mh-size-decrease
+{
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 300ms;
+}
+#mh-size-decrease:hover
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(0.96);
+}
+
+#mh-opacity
+{
+    transition-duration: 150ms;
+    opacity: 0.5;
+}
+#mh-opacity:hover
+{
+    opacity: 1;
+}
+#mh-opacity-full
+{
+    transition-duration: 500ms;
+    opacity: 0;
+}
+#mh-opacity-full:hover
+{
+    opacity: 1;
+}
+
+#mh-interaction
+{
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 150ms;
+    opacity: 0.75;
+}
+#mh-interaction:hover
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(1.04);
+    opacity: 1;
+}
+#mh-interaction:active
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(0.96);
+    opacity: 1;
+}
+
+#mh-interaction-xl
+{
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 150ms;
+}
+#mh-interaction-xl:hover
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(1.25);
+}
+#mh-interaction-xl:active
+{
+    cursor: default;
+    z-index: 1000;
+    transform: scale(0.75);
+}
+
+#mh-extend-up
+{
+    transition: 250ms;
+    height: 35px;
+}
+#mh-extend-up:hover
+{
+    height: 55px;
+}
+
+#about-me-text
+{
+    transition-duration: 500ms;
+    background-color: #C9CED4;
+    color: #30303C;
+}
+#about-me-text:hover
+{
+    background-color: #202020;
+    color: #FFFFFF;
+}
+
+#paragraph-bg
+{
+    mix-blend-mode: exclusion;
+    overflow: hidden;
+}
+#paragraph
+{
+    width: calc(100% - 50px);
+    transition: 1s;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#mh-paragraph > #paragraph-bg
+{
+    transition: 500ms ease;
+    width: 250px;
+    background-image: linear-gradient(to bottom, transparent, #FFFFFF40);
+    height: 20px;
+}
+#mh-paragraph:hover > #paragraph-bg
+{
+    width: calc(100% - 30px);
+    background-image: linear-gradient(to bottom, transparent, #FFFFFF40);
+    height: calc(100vh - 730px);
+}
+#mh-paragraph > div > .paragraph-underline
+{
+    transition: 500ms ease;
+    width: 250px;
+}
+#mh-paragraph:hover > div > .paragraph-underline
+{
+    width: 100%;
+}

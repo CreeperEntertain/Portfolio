@@ -1,0 +1,21 @@
+.v-center
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.v-top
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.v-bottom
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}

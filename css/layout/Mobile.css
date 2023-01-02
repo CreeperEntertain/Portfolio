@@ -1,0 +1,16 @@
+#warning
+{
+    transition: 150ms;
+    transition-property: opacity;
+    opacity: 0;
+    pointer-events: none;
+}
+@media (max-width: 800px) {
+
+    #warning
+    {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+}

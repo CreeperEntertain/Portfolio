@@ -1,0 +1,35 @@
+.hover-animation
+{
+    position: absolute;
+    animation: a 5s ease-in-out infinite;
+    margin-top: -40px;
+}
+@keyframes a
+{
+    0%, 100%
+    {
+        margin-top: -40px;
+    }
+    50%
+    {
+        margin-top: -20px;
+    }
+}
+
+.hover-animation-b
+{
+    position: absolute;
+    animation: b 5s ease-in-out infinite;
+    margin-top: 0px;
+}
+@keyframes b
+{
+    0%, 100%
+    {
+        margin-top: -20px;
+    }
+    50%
+    {
+        margin-top: 0px;
+    }
+}

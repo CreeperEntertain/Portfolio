@@ -1,0 +1,43 @@
+/* This is a certified CSS hood classic */
+
+html
+{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+input
+{
+    display: none;
+}
+a
+{
+    text-decoration: none;
+}
+p, h1, h2, h3, h4, h5, h6
+{
+    pointer-events: none;
+}
+
+/* Scrollbar For Chrome Cuz WHY IN GODS NAME Must It Not Stop SHOWING?!?! */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    color: white;
+    border-radius: 100px;
+}

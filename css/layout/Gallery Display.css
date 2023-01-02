@@ -1,0 +1,340 @@
+.p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8, .p-9, .p-10, .p-11, .p-12, .p-13, .p-14, .p-15, .p-16, .p-17, .p-18, .p-19, .p-20, .p-21
+{
+    transition: 1s;
+}
+
+#Post1:not(:checked) ~ .PostDisplay > .p-1
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post1:checked ~ .PostDisplay > .p-1
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post2:not(:checked) ~ .PostDisplay > .p-2
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post2:checked ~ .PostDisplay > .p-2
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post3:not(:checked) ~ .PostDisplay > .p-3
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post3:checked ~ .PostDisplay > .p-3
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post4:not(:checked) ~ .PostDisplay > .p-4
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post4:checked ~ .PostDisplay > .p-4
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post5:not(:checked) ~ .PostDisplay > .p-5
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post5:checked ~ .PostDisplay > .p-5
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post6:not(:checked) ~ .PostDisplay > .p-6
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post6:checked ~ .PostDisplay > .p-6
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post7:not(:checked) ~ .PostDisplay > .p-7
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post7:checked ~ .PostDisplay > .p-7
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post8:not(:checked) ~ .PostDisplay > .p-8
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post8:checked ~ .PostDisplay > .p-8
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post9:not(:checked) ~ .PostDisplay > .p-9
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post9:checked ~ .PostDisplay > .p-9
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post10:not(:checked) ~ .PostDisplay > .p-10
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post10:checked ~ .PostDisplay > .p-10
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post11:not(:checked) ~ .PostDisplay > .p-11
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post11:checked ~ .PostDisplay > .p-11
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post12:not(:checked) ~ .PostDisplay > .p-12
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post12:checked ~ .PostDisplay > .p-12
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post13:not(:checked) ~ .PostDisplay > .p-13
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post13:checked ~ .PostDisplay > .p-13
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post14:not(:checked) ~ .PostDisplay > .p-14
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post14:checked ~ .PostDisplay > .p-14
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post15:not(:checked) ~ .PostDisplay > .p-15
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post15:checked ~ .PostDisplay > .p-15
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post16:not(:checked) ~ .PostDisplay > .p-16
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post16:checked ~ .PostDisplay > .p-16
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post17:not(:checked) ~ .PostDisplay > .p-17
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post17:checked ~ .PostDisplay > .p-17
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post18:not(:checked) ~ .PostDisplay > .p-18
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post18:checked ~ .PostDisplay > .p-18
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post19:not(:checked) ~ .PostDisplay > .p-19
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post19:checked ~ .PostDisplay > .p-19
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post20:not(:checked) ~ .PostDisplay > .p-20
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post20:checked ~ .PostDisplay > .p-20
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}
+
+#Post21:not(:checked) ~ .PostDisplay > .p-21
+{
+    opacity: 0;
+    z-index: -1;
+
+    transform: scale(0.75);
+    filter: blur(100px);
+}
+#Post21:checked ~ .PostDisplay > .p-21
+{
+    opacity: 1;
+    z-index: 1;
+
+    transform: scale(1);
+}

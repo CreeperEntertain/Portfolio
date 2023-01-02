@@ -1,0 +1,33 @@
+.side-menu-animation-a
+{
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transform: translate(calc(100% - 40px), -50%);
+}
+.side-menu-animation-a:hover
+{
+    transform: translate(0, -50%);
+}
+.side-menu-animation-b
+{
+    transition-timing-function: ease;
+    transition-duration: 4s;
+    border-radius: 40px 0 0 40px;
+}
+.side-menu-animation-a:hover
+{
+    border-radius: 10px 0 0 10px;
+}
+
+.side-menu-area
+{
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+    background-color: transparent;
+    border-radius: 5px 0 0 5px;
+}
+.side-menu-area:hover
+{
+    background-color: #FFFF005B;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.show-reel-reveal, .show-reel-reveal-icon-plus
+{
+    transition: 1s;
+}
+#RRB:checked ~ .show-reel-reveal
+{
+    height: calc(100vh - 400px);
+    background-color: transparent;
+}
+#RRB:not(:checked) ~ .show-reel-reveal
+{
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+
+#RRB:checked ~ .show-reel-reveal > label > div > .show-reel-reveal-icon-plus
+{
+    opacity: 0;
+}
+#RRB:not(:checked) ~ .show-reel-reveal > label > div > .show-reel-reveal-icon-plus
+{
+    opacity: 1;
+}
