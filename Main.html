@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="unblur" style="background-color: black;">
+    <head>
+        <meta charset="utf-8">
+        <!--Page Title-->
+        <title>
+            This is a neat title!
+        </title>
+
+        <!--Stylesheet Links-->
+        <link rel="stylesheet" href="css/Main.css">
+
+        <link rel="stylesheet" href="css/animation/Hover.css">
+        <link rel="stylesheet" href="css/animation/Mouse Hover.css">
+        <link rel="stylesheet" href="css/animation/Reveal.css">
+        <link rel="stylesheet" href="css/animation/Side Menu.css">
+        <link rel="stylesheet" href="css/animation/Blur.css">
+        <link rel="stylesheet" href="css/animation/Scrolling.css">
+        <link rel="stylesheet" href="css/animation/Show Reel Reveal.css">
+
+        <link rel="stylesheet" href="css/layout/Rows & Columns.css">
+        <link rel="stylesheet" href="css/layout/Horizontal Alignment.css">
+        <link rel="stylesheet" href="css/layout/Vertical Alignment.css">
+        <link rel="stylesheet" href="css/layout/Gallery Image.css">
+        <link rel="stylesheet" href="css/layout/Gallery Display.css">
+        <link rel="stylesheet" href="css/layout/Mobile.css">
+
+        <link rel="stylesheet" href="css/fx/Grain.css">
+        <link rel="stylesheet" href="css/fx/Shadow.css">
+
+        <link rel="stylesheet" href="css/text/Text Transformation.css">
+
+        <link rel="stylesheet" href="css/fonts/Raleway.css">
+        <link rel="stylesheet" href="css/fonts/Lexend.css">
+        <link rel="stylesheet" href="css/fonts/Braille.css">
+
+        <link rel="stylesheet" href="iframe/!Alignment.css">
+    </head>
+    <body>
+        <!--Minimal Width Requirement-->
+        <div id="warning" style="height: 100vh; width: 100vw; z-index: 10000000; position: fixed; background-color: #30303C;">
+            <h1 style="color: white; position: absolute; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-family: 'Raleway';">
+                Please change to desktop on fullscreen
+            </h1>
+        </div>
+
+        <!--Header As Wrapper-->
+        <div class="shadow" style="height: 100px; position: fixed; background-color: white; top: 0; left: 0; width: 100%; z-index: 100000; display: flex; justify-content: space-between;">
+            <div style="height: 100%; display: flex; align-items: center; gap: 30px;">
+                <a style="height: 100%; flex-shrink: 0;" href="#">
+                    <img src="img/logo/pack upscaled.png">
+                </a>
+                <h1 style="font-family: 'Raleway'; position: inherit; margin: 0; font-weight: 300;">
+                    Designs that just work.
+                </h1>
+            </div>
+            <div style="height: 100%; width: 100%; display: flex; flex-direction: row-reverse; align-items: center; gap: 35px; justify-content: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <a href="https://www.twitter.com/CreepEntertain" target="_blank" style="text-decoration: none;">
+                    <img id="mh-interaction-xl" src="img/logo/Twitter Logo.png" style="max-height: 50px; width: 50px;">
+                </a>
+            </div>
+        </div>
+
+        <!--Side Nav Menu-->
+        <div id="mh-opacity" class="side-menu-animation-a side-menu-animation-b shadow" style="mix-blend-mode: luminosity; height: fit-content; width: 500px; background-color: #292929e0; position: fixed; z-index: 100000; top: calc(50% + 100px); right: 0;">
+            <div style="display: flex; flex-wrap: nowrap; align-content: center; align-items: center; height: 100%; width: 100%;">
+                <div style="width: 40px; height: auto;">
+                    <div class="start-size-anim" style="margin: auto; margin-right: 5px; width: 0; height: 0; border-top: 10px solid white; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid transparent;"></div>
+                </div>
+                <div style="width: calc(100% - 40px);">
+                    <a href="#">
+                        <div class="side-menu-area" style="height: 50px; width: 100%; display: flex; align-items: center;">
+                            <div style="height: 1px; width: 30px; margin-right: 10px; background-color: white;"></div>
+                            <p style="cursor: pointer; margin: 0; color: white; font-family: 'Lexend'; font-weight: 200; font-size: x-large;">
+                                Cover Page
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#SEC-1">
+                        <div class="side-menu-area" style="height: 50px; width: 100%; display: flex; align-items: center;">
+                            <div style="height: 1px; width: 30px; margin-right: 10px; background-color: white;"></div>
+                            <p style="cursor: pointer; margin: 0; color: white; font-family: 'Lexend'; font-weight: 200; font-size: x-large;">
+                                Projects
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#SEC-2">
+                        <div class="side-menu-area" style="height: 50px; width: 100%; display: flex; align-items: center;">
+                            <div style="height: 1px; width: 30px; margin-right: 10px; background-color: white;"></div>
+                            <p style="cursor: pointer; margin: 0; color: white; font-family: 'Lexend'; font-weight: 200; font-size: x-large;">
+                                About
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Portfolio Cover-->
+        <div style="height: 100px;"></div>
+        <div style="height: calc(100vh - 100px); position: relative;">
+            <div style="height: 100%; opacity: 0.9; background-image: url('img/cover/Portfolio\ Presentation\ Finished\ Compressed.jpg'); background-size: 220vh; background-repeat: no-repeat; background-position: center center; background-color: black;"></div>
+            <h1 style="position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%);margin: 0; color: white; font-family: 'Raleway'; font-size: 15vh; font-weight: 200; text-transform: uppercase; text-shadow: 0px 2px 40px black, 0px 2px 40px black, 0px 2px 40px black, 0px 2px 40px black;">Welcome!</h1>
+            <h1 style="letter-spacing: 19px; mix-blend-mode: overlay; position: absolute; bottom: 12%; left: 50%; transform: translate(-50%, -50%); margin: 0; color: white; font-family: 'Raleway'; font-size: 5vh; font-weight: 300; font-style: italic; text-shadow: 0px 2px 10px black, 0px 2px 40px black">Have A Look Around</h1>
+            <h1 style="letter-spacing: 19px; mix-blend-mode: overlay; position: absolute; bottom: 12%; left: 50%; transform: translate(-50%, -50%); margin: 0; color: white; font-family: 'Raleway'; font-size: 5vh; font-weight: 300; font-style: italic; text-shadow: 0px 2px 10px black, 0px 2px 40px black">Have A Look Around</h1>
+            <h1 style="mix-blend-mode: overlay; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); margin: 0; color: white; font-family: 'Raleway'; font-size: 2vh; font-weight: 300; font-style: italic; text-shadow: 0px 2px 10px black, 0px 2px 40px black">(The side menu is to your right)</h1>
+            <h1 style="mix-blend-mode: overlay; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); margin: 0; color: white; font-family: 'Raleway'; font-size: 2vh; font-weight: 300; font-style: italic; text-shadow: 0px 2px 10px black, 0px 2px 40px black">(The side menu is to your right)</h1>
+        </div>
+
+        <!--Page SECTION 1-->
+        <div id="SEC-1" style="margin-top: -100px;"></div>
+        <div style="height: 100px; width: 100%; background-image: linear-gradient(to bottom, #00000000, #000000FF);"></div>
+        <!--Page Segment 2-->
+        <div style="height: calc(100vh - 100px); background-color: black;">
+            <div style="width: 100%; height: 100%; position: relative;">
+                <!--Gallery Inputs Start-->
+                <input type="radio" name="PostSelection" id="Post1">
+                <input type="radio" name="PostSelection" id="Post2">
+                <input type="radio" name="PostSelection" id="Post3">
+                <input type="radio" name="PostSelection" id="Post4">
+                <input type="radio" name="PostSelection" id="Post5">
+                <input type="radio" name="PostSelection" id="Post6">
+                <input type="radio" name="PostSelection" id="Post7">
+                <input type="radio" name="PostSelection" id="Post8">
+                <input type="radio" name="PostSelection" id="Post9">
+                <input type="radio" name="PostSelection" id="Post12">
+                <input type="radio" name="PostSelection" id="Post13">
+                <input type="radio" name="PostSelection" id="Post16">
+                <input type="radio" name="PostSelection" id="Post18" checked>
+                <!--Gallery Inputs End-->
+                
+                <!--Post Arrangement Start-->
+                <input type="checkbox" name="RevealReel" id="RRB" checked>
+                <div class="PostDisplay show-reel-reveal" style="width: 100%; position: relative; z-index: 1;">
+                    <label style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 50; cursor: pointer;" for="RRB">
+                        <div id="mh-extend-up" class="shadow" style="width: 30px; display: grid; position: relative; cursor: pointer;">
+                            <div style="width: 0; border-top: 15px solid transparent; border-left: 15px solid white; border-right: 15px solid white; height: 100%; transform: translateY(-15px);"></div>
+                            <img class="show-reel-reveal-icon-plus" src="svg/Plus Transparent.svg" style="position: absolute; left: 50%; top: 0; transform: translate(-50%, 50%);">
+                            <img src="svg/Minus Transparent.svg" style="position: absolute; left: 50%; top: 0; transform: translate(-50%, 50%);">
+                        </div>
+                    </label>
+
+                    <iframe src="iframe/Post 1.html" class="post-align p-1" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 2.html" class="post-align p-2" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 3.html" class="post-align p-3" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 4.html" class="post-align p-4" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 5.html" class="post-align p-5" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 6.html" class="post-align p-6" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 7.html" class="post-align p-7" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 8.html" class="post-align p-8" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 9.html" class="post-align p-9" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 12.html" class="post-align p-12" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 13.html" class="post-align p-13" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 16.html" class="post-align p-16" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                    <iframe src="iframe/Post 18.html" class="post-align p-18" style="height: 100%; width: 100%; border-width: 0;"></iframe>
+                </div>
+                <!--Post Arrangement End-->
+
+                <!--Show Reel Start-->
+                <div style="position: absolute; left: 0; top: calc(100% - 300px);">
+                    <div style="height: 50px; display: flex; align-items: center; align-content: center;">
+                        <div style="width: 40px; height: 1px; background-color: white;"></div>
+                        <p style="color: white; margin: 0; margin-left: 20px; font-size: xx-large; font-family: 'Lexend'; font-weight: 100; letter-spacing: 20px;">
+                            Show Reel
+                        </p>
+                    </div>
+                    <div style="width: max-content; display: flex; flex-wrap: nowrap;">
+                        <!--Actual Reel-->
+                        <div class="scroll" style="height: calc(250px - 10px); width: max-content; display: flex; padding-top: 10px; padding-bottom: 10px; gap: 10px; overflow: visible; flex-shrink: 0;">
+                            <label id="mh-interaction" class="g-img" for="Post1" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/cover/Portfolio Presentation Finished Compressed.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post2" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Algorithm 1 Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post3" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Alien Finished Compressed.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post4" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Baroque Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post5" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Binary Final Text Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post6" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Cluster Skull Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post7" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Door Of Evil Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post8" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Dynasty Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post9" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Foshwave Statue Finished.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post12" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Library Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post13" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Logo 3D Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post16" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Patio Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post18" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Skull Design Mockup Full.png" style="border-radius: 8px;">
+                            </label>
+                            <div style="height: 100%; width: 0;"></div>
+                        </div>
+                        <!--Second Reel for Infinite Scrolling Effect-->
+                        <div class="scroll-2" style="height: calc(250px - 10px); width: max-content; display: flex; padding-top: 10px; padding-bottom: 10px; gap: 10px; overflow: visible; flex-shrink: 0;">
+                            <label id="mh-interaction" class="g-img" for="Post1" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/cover/Portfolio Presentation Finished Compressed.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post2" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Algorithm 1 Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post3" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Alien Finished Compressed.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post4" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Baroque Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post5" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Binary Final Text Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post6" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Cluster Skull Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post7" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Door Of Evil Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post8" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Dynasty Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post9" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Foshwave Statue Finished.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post12" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Library Finished.jpg" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post13" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Logo 3D Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post16" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Patio Finished Compressed.png" style="border-radius: 8px;">
+                            </label>
+                            <label id="mh-interaction" class="g-img" for="Post18" style="flex-shrink: 0; border-width: 1px; border-color: #FFFFFF40; border-radius: 10px; border-style: solid;">
+                                <img src="img/renders/Skull Design Mockup Full.png" style="border-radius: 8px;">
+                            </label>
+                        </div>
+                        <!--You'd think making an element scroll infinitely would be easy.-->
+                        <!--You'd be wrong.-->
+                    </div>
+                </div>
+                <!--Show Reel End-->
+            </div>
+        </div>
+
+        <!--Page SECTION 2-->
+        <div id="SEC-2" style="margin-top: -100px;"></div>
+        <!--Page Segment 2-->
+        <div style="width: 100vw; height: calc(100vh - 100px); margin-top: 100px; position: relative;">
+            <!--Top Fade For Flow With Last Page Segment-->
+            <!--^This comment is unbelievably unnecessarily long and contains an amount of words that it would not need to.-->
+            <div style="position: absolute; top: 0; left: 0; height: 50px; width: 100vw; background-image: linear-gradient(to bottom, #000000FF, #00000000); z-index: 50; pointer-events: none;"></div>
+
+            <div style="display: flex; flex-wrap: nowrap; height: 100%; width: 100%; position: relative;">
+                <div style="height: calc(100vh - 100px); z-index: 2; overflow: hidden; flex-shrink: 0;">
+                    <img src="img/photo/Style 2.jpg" id="mh-opacity-full" style="height: 100%; position: absolute; top: 0; left: 0;">
+                    <img src="img/photo/Style 1.jpg" style="height: 100%;">
+                </div>
+                <div id="about-me-text" style="position: relative; height: 100%; flex-grow: 1; display: flex; flex-direction: column;">
+                    <!--Text Of Right Area Start-->
+                    <div style="flex-grow: 1; position: relative;">
+                        <div style="height: calc(100%); padding-left: 30px; display: flex; flex-direction: column;">
+                            <!--Heading Start-->
+                            <div style="margin-top: 20px;">
+                                <h1 style="font-family: 'Raleway'; color: inherit; font-weight: 900; font-size: 56px; margin: 0; text-transform: uppercase;">
+                                    CEntertain
+                                </h1>
+                            </div>
+                            <h1 style="font-family: 'Raleway'; color: inherit; font-weight: 300; font-style: italic; font-size: 36px; margin: 0; margin-top: -10px;">
+                                aka. Tim Gerullat
+                            </h1>
+                            <p style="text-indent: 50px; font-family: 'Lexend'; color: inherit; font-size: larger; text-align: justify; margin-bottom: 0; margin-top: 20px; font-weight: 200;">
+                                I'm a freelance and hobby 3D, graphic, and web designer.
+                            </p>
+                            <!--Heading End-->
+
+                            <!--Text Area Start-->
+                            <div id="mh-paragraph" style="position: relative; padding-top: 30px;">
+                                <p style="color: inherit; font-family: 'Raleway'; font-size: xx-large; font-weight: 300; margin: 0;">
+                                    MOTIVES
+                                </p>
+                                <div id="paragraph-bg" style="overflow-y: scroll;">
+                                    <p id="paragraph" style="text-indent: 50px; font-family: 'Lexend'; color: inherit; text-align: justify; margin-bottom: 0; margin-top: 10px; margin-left: 20px;">
+                                        All my work is lovingly hand made (as well as this website). And my tools of choice are, depending
+                                        on the job, Blender, Paint.NET, Visual Studio, VSDC, and Google Docs. <br>
+                                        When working on a project of any kind, inspiration is key. The reasons I get motivated to realize
+                                        something are often quite simple. Someone presents an interesting idea, someone needs something
+                                        specific realized, there is something that pops up on a feed, or there's something astonishing in
+                                        nature. Little details matter. I then often try to capture the idea of it, and what makes it so
+                                        interesting, and break it down to a core. This is often helped with browsing through platforms like
+                                        Pinterest or other image boards to get a sense of continuity, or to see what would be a nice addition
+                                        to the final design. <br>
+                                        Taking this website, for example, I wanted to capture this sense of flow and plain, clean shapes,
+                                        combined with elements like shadows, and inverted lights to create something that's essentially eye candy.
+                                        And that's really what you want to present an idea - or a product.
+                                    </p>
+                                </div>
+                                <div style="width: calc(100% - 30px); mix-blend-mode: exclusion;">
+                                    <div class="paragraph-underline" style="background-color: #FFFFFF; height: 5px;"></div>
+                                    <div style="background-image: linear-gradient(to right, #FFFFFFFF, #FFFFFF00); height: 1px; margin-top: -1px;"></div>
+                                </div>
+                            </div>
+                            <div id="mh-paragraph" style="position: relative; padding-top: 30px;">
+                                <p style="color: inherit; font-family: 'Raleway'; font-size: xx-large; font-weight: 300; margin: 0;">
+                                    ROUTINE
+                                </p>
+                                <div id="paragraph-bg" style="overflow-y: scroll;">
+                                    <p id="paragraph" style="text-indent: 50px; font-family: 'Lexend'; color: inherit; text-align: justify; margin: 0; margin-top: 10px; margin-left: 20px;">
+                                        The work cycle of a project is quite simple - Collect references and details on how it should look,
+                                        combine the two, and then start shaping what comes into mind. The rest is essentially just pulling
+                                        every trick in the book to put a personal spin on the whole thing and to increase the quality to
+                                        the highest amount possible. <br>
+                                        Of course, let's not forget the back and forth between me and my clients. And by that, I mean: I
+                                        often push out updates about the current design's progress, receive feedback, and change or add details
+                                        accordingly. It's a very honest process, and one that I kind of like, because it is a very collaborative
+                                        way of going about a project, and one in which both parties can first of all see actual progress and
+                                        how things are, but seconly also get to know each other better. Obviously, I am not saying that deep
+                                        friendship necessarily has to start forming, but it's always better to have nice relations between you
+                                        and the people you work with. It creates a generally nicer atmosphere, and that's really what drives
+                                        the process forward as a whole. And let's be honest - Who wants to work with someone who's hysteric
+                                        all the time?
+                                    </p>
+                                </div>
+                                <div style="width: calc(100% - 30px); mix-blend-mode: exclusion;">
+                                    <div class="paragraph-underline" style="background-color: #FFFFFF; height: 5px;"></div>
+                                    <div style="background-image: linear-gradient(to right, #FFFFFFFF, #FFFFFF00); height: 1px; margin-top: -1px;"></div>
+                                </div>
+                            </div>
+                            <div id="mh-paragraph" style="position: relative; padding-top: 30px;">
+                                <p style="color: inherit; font-family: 'Raleway'; font-size: xx-large; font-weight: 300; margin: 0;">
+                                    HISTORY
+                                </p>
+                                <div id="paragraph-bg" style="overflow-y: scroll;">
+                                    <p id="paragraph" style="text-indent: 50px; font-family: 'Lexend'; color: inherit; text-align: justify; margin-bottom: 0; margin-top: 10px; margin-left: 20px;">
+                                        Born in 2002. Grew up in a town in north western Germany.
+                                        In 2021, I started with both, design and 3D modelling. Only an interest in the topic at the time, but it
+                                        quickly became something more. It all started out with a small plan. And that was to simulate breaking
+                                        glass, surprisingly. <br>
+                                        Ever since the beginnings of my interests in design and art, there has been this sort of interest of mine
+                                        in clean looking and sharp visuals. And I think this is the main contributing factor to why I like the
+                                        kind of materials I often use. Materials and objects such as concrete, metal, water, plants, sand, glass,
+                                        plastic, and plants. They form this sort of concoction that is just plain nice to look at when combined
+                                        under the right light. It is this interest in the topic as a whole that brought me to the point I am at
+                                        right now, and the reason I am confident in saying that I feel at home around any kind of clean modern
+                                        marketing design or design in general.
+                                    </p>
+                                    <p id="paragraph" style="text-indent: 50px; font-family: 'Lexend'; color: inherit; text-align: justify; margin-bottom: 0; margin-top: 10px; margin-left: 20px;">
+                                        If you break it down, it is simple to create things people like to look at - It only comes down to knowing
+                                        the details, and recognising beauty.
+                                    </p>
+                                </div>
+                                <div style="width: calc(100% - 30px); mix-blend-mode: exclusion;">
+                                    <div class="paragraph-underline" style="background-color: #FFFFFF; height: 5px;"></div>
+                                    <div style="background-image: linear-gradient(to right, #FFFFFFFF, #FFFFFF00); height: 1px; margin-top: -1px;"></div>
+                                </div>
+                            </div>
+                            <!--Text Area End-->
+                        </div>
+                    </div>
+                    <!--Text Of Right Area End-->
+
+                    <!--Feedback Reel Start-->
+                    <div class="shadow" style="width: calc(100% - 60px); height: 150px; mix-blend-mode: exclusion; display: flex; flex-direction: column; position: absolute; left: 30px; bottom: 30px; z-index: 1; pointer-events: none;">
+                        <div style="width: 100%; flex-grow: 1; position: relative; overflow-x: hidden; padding-top: 10px; padding-bottom: 10px;">
+                            <div style="height: 100%; width: 100%; display: flex; overflow-x: hidden;">
+                                <!--Scroll Wrapper Start-->
+                                <div style="display: flex; gap: 10px;">
+                                    <div class="scroll2" style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Nexus
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Looks sick! I'll let you know what I'll use it for. TYSM ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Thomas Tinetti
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Definitely is motivating me to get it done as soon as possible.
+                                                Thank you for such fast work too, I really appreciate it! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Ben Whitfield
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ You nailed the vision I had,
+                                                defo will be working with you more in the future ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Ismaël Schaalma
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Looks very nice, thanks so much! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            RedSeikatsu
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ The model looks amazing man
+                                                I can’t wait to see it be able to move and stuff ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Timo Kissel
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Thank you so much, looks great!
+                                                I'll let you know after I incorporate this image into an upcoming release! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 0;"></div>
+                                </div>
+                                <!--Scroll Wrapper End-->
+                                <!--Mirror With Offset Start-->
+                                <div style="display: flex; gap: 10px;">
+                                    <div class="scroll3" style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Nexus
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Looks sick! I'll let you know what I'll use it for. TYSM ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Thomas Tinetti
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Definitely is motivating me to get it done as soon as possible.
+                                                Thank you for such fast work too, I really appreciate it! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Ben Whitfield
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ You nailed the vision I had,
+                                                defo will be working with you more in the future ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Ismaël Schaalma
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Looks very nice, thanks so much! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            RedSeikatsu
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ The model looks amazing man
+                                                I can’t wait to see it be able to move and stuff ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="height: 100%; width: 250px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; flex-shrink: 0;">
+                                        <h1 style="color: black; font-family: 'Lexend'; margin: 5px; margin-bottom: 0; margin-top: 10px; text-align: center; font-weight: 500; text-transform: uppercase; font-size: larger; height: 30px;">
+                                            Timo Kissel
+                                        </h1>
+                                        <div style="width: 100%; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5px; overflow: hidden;">
+                                            <p style="font-size: small; text-align: center; color: black; font-family: 'Lexend'; font-style: italic; margin-left: 5px; margin-right: 5px;">
+                                                “ Thank you so much, looks great!
+                                                I'll let you know after I incorporate this image into an upcoming release! ”
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Mirror With Offset End-->
+                            </div>
+                            <!--Lines And Shadows-->
+                            <div style="height: 100%; width: 20px; background-image: linear-gradient(to left, transparent, #FFFFFF40); position: absolute; top: 0; left: 5px;"></div>
+                            <div style="height: 100%; width: 20px; background-image: linear-gradient(to right, transparent, #FFFFFF40); position: absolute; top: 0; right: 5px;"></div>
+                            <div style="height: 100%; width: 5px; background-color: white; position: absolute; top: 0; left: 0;"></div>
+                            <div style="height: 100%; width: 5px; background-color: white; position: absolute; top: 0; right: 0;"></div>
+                        </div>
+                    </div>
+                    <!--Feedback Reel End-->
+                </div>
+            </div>
+        </div>
+
+        <!--Page SECTION 3-->
+        <div id="SEC-3" style="margin-top: -100px;"></div>
+        <!--Page Segment 3-->
+        <div style="width: 100vw; height: calc(100vh - 100px); margin-top: 100px; position: relative;">
+
+        </div>
+    </body>
+</html>
